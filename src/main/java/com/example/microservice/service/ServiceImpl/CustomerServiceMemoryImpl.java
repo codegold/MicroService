@@ -2,10 +2,12 @@ package com.example.microservice.service.ServiceImpl;
 
 import com.example.microservice.model.CustomerDTO;
 import com.example.microservice.service.CustomerService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class CustomerServiceMemoryImpl implements CustomerService {
 
     Map<Integer, CustomerDTO> persist = new HashMap<>();
